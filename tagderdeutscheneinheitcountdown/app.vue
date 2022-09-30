@@ -3,38 +3,38 @@
     <div
       class="
         min-w-screen min-h-screen
-        bg-yellow-500
+        bg-gray-900
         flex
         items-center
         justify-center
         px-5
         py-5
       "
-      x-data="beer()"
-      x-init="start()"
     >
-      <div class="text-yellow-100">
-        <h1 class="text-6xl text-center mb-3 font-bold">
-          Tag der deutschen Einheit!
+      <div class="text-gray-100">
+        <h1 class="text-5xl md:text-8xl text-center mb-3 font-bold">
+          <p>Tag der</p>
+          <p class="text-yellow-500">deutschen</p>
+          <p>Einheit!</p>
         </h1>
         <div
-          class="text-6xl text-center flex w-full items-center justify-center"
+          class="text-6xl text-center flex flex-col space-y-2 md:flex-row w-full items-center justify-center"
         >
           <div class="text-2xl mr-1 font-extralight">in</div>
-          <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+          <div class="w-24 mx-1 p-2 bg-black rounded-lg">
             <div class="font-mono leading-none" x-text="days">{{ days }}</div>
             <div class="font-mono uppercase text-sm leading-none">Tagen</div>
           </div>
-          <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+          <div class="w-24 mx-1 p-2 bg-red-500 rounded-lg">
             <div class="font-mono leading-none" x-text="hours">{{ hours }}</div>
             <div class="font-mono uppercase text-sm leading-none">Stunden</div>
           </div>
-          <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+          <div class="w-24 mx-1 p-2 bg-yellow-500 rounded-lg">
             <div class="font-mono leading-none" x-text="minutes">{{ minutes }}</div>
             <div class="font-mono uppercase text-sm leading-none">Minuten</div>
           </div>
           <div class="text-2xl mx-1 font-extralight">und</div>
-          <div class="w-24 mx-1 p-2 bg-white text-yellow-500 rounded-lg">
+          <div class="w-24 mx-1 p-2 bg-gray-400 rounded-lg">
             <div class="font-mono leading-none" x-text="seconds">{{ seconds }}</div>
             <div class="font-mono uppercase text-sm leading-none">Sekunden</div>
           </div>
