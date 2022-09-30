@@ -1,10 +1,10 @@
 <template>
   <div>
     <Head>
-      <Title>Noch {{ hours_until }} Std. bis zum {{ title }}</Title>
-      <Meta name="description" content="Wie viele Stunden sind es noch bis zur dt. Einheit?" />
+      <Title>{{ hours_until }} Std. bis zum {{ title }}</Title>
+      <Meta name="description" content="Verpass nicht den Jahrestags unseres geliebten Vaterlandes!" />
       <Meta property="og:title" :content="`${ title }`" />
-      <Meta property="og:description" content="Wie viele Stunden sind es noch bis zur dt. Einheit?"/>
+      <Meta property="og:description" content="Verpass nicht den Jahrestags unseres geliebten Vaterlandes!"/>
       <Meta property="og:type" content="website" />
       <Meta property="og:url" content="https://countdown.tag-der-deutschen-einheit.org" />
     </Head>
@@ -81,7 +81,7 @@
 
 
 <script lang="ts" setup>
-const title = "Tag der dt. Einheit!!!"
+const title = "Tag der dt. Einheit"
 var deadline = new Date("Oct 3, 2022 00:00:00").getTime();
 var days = ref(0)
 var hours_until = ref(0)
