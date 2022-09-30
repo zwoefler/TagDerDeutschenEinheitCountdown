@@ -48,8 +48,8 @@
     >
       <div>
         <a
-          title="Buy me a beer"
-          href="https://www.buymeacoffee.com/scottwindon"
+          title="Kauf mirn Bier"
+          href="https://www.buymeacoffee.com/martinzwoelfer"
           target="_blank"
           class="
             block
@@ -94,29 +94,5 @@ var x = setInterval(function() {
     clearInterval(x);
   }
 }, 1000);
-
-// Import the functions you need from the SDKs you need
-
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyCwL4SFgkDg7Rm4njw3uwkLFeUQvsMgwog",
-  authDomain: "tagderdeutscheneinheit-84a12.firebaseapp.com",
-  projectId: "tagderdeutscheneinheit-84a12",
-  storageBucket: "tagderdeutscheneinheit-84a12.appspot.com",
-  messagingSenderId: "472373821537",
-  appId: "1:472373821537:web:91805be43a997578f02a20",
-  measurementId: "G-SJ3VWJDWMB"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
 
 </script>
