@@ -22,3 +22,4 @@ jobs:
           channelId: live
           projectId: tagderdeutscheneinheit-84a12
           entrypoint: tagderdeutscheneinheitcountdown/
+      - run: cp favicon.ico .output/public
