@@ -2,7 +2,11 @@
   <div>
     <Head>
       <Title>Noch {{ hours_until }} Std. bis zum {{ title }}</Title>
-      <Meta name="description" :content="`Noch ${ hours_until } Std. bis zum ${ title }`" />
+      <Meta name="description" content="Wie viele Stunden sind es noch bis zur dt. Einheit?" />
+      <Meta property="og:title" :content="`${ title }`" />
+      <Meta property="og:description" content="Wie viele Stunden sind es noch bis zur dt. Einheit?"/>
+      <Meta property="og:type" content="website" />
+      <Meta property="og:url" content="https://countdown.tag-der-deutschen-einheit.org" />
     </Head>
     <div
       class="
