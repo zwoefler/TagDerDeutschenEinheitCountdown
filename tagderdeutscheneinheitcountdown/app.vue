@@ -1,5 +1,9 @@
 <template>
   <div>
+    <Head>
+      <Title>Noch {{ hours_until }} Std. bis zum {{ title }}</Title>
+      <Meta name="description" :content="`Noch ${ hours_until } Std. bis zum ${ title }`" />
+    </Head>
     <div
       class="
         min-w-screen min-h-screen
@@ -7,8 +11,6 @@
         flex
         items-center
         justify-center
-        px-5
-        py-5
       "
     >
       <div class="text-gray-100">
@@ -75,8 +77,10 @@
 
 
 <script lang="ts" setup>
+const title = "Tag der dt. Einheit!!!"
 var deadline = new Date("Oct 3, 2022 00:00:00").getTime();
 var days = ref(0)
+var hours_until = ref(0)
 var hours = ref(0)
 var minutes = ref(0)
 var seconds = ref(0)
@@ -84,15 +88,11 @@ var x = setInterval(function() {
   var now = new Date().getTime();
   var t = deadline - now;
   days.value = Math.floor(t / (1000 * 60 * 60 * 24));
+  hours_until.value = Math.floor(t / (1000 * 60 * 60));
   hours.value = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
   minutes.value = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
   seconds.value = Math.floor((t % (1000 * 60)) / 1000);
-  // Display the result in the element with id="demo"
 
-  // If the count down is finished, write some text
-  if (t < 0) {
-    clearInterval(x);
-  }
 }, 1000);
 
 </script>
