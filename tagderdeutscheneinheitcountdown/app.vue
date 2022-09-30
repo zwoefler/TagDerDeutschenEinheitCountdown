@@ -6,6 +6,7 @@
       <Meta property="og:title" :content="`${ title }`" />
       <Meta property="og:description" content="Verpass nicht den Jahrestags unseres geliebten Vaterlandes!"/>
       <Meta property="og:type" content="website" />
+      <Meta property="og:site_name" content="Tag der deutschen Einheit" />
       <Meta property="og:url" content="https://countdown.tag-der-deutschen-einheit.org" />
     </Head>
     <div
