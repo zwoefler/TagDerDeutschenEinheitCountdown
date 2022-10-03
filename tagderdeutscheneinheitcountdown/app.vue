@@ -28,20 +28,20 @@
           class="text-6xl text-center flex flex-col space-y-2 md:flex-row w-full items-center justify-center"
         >
           <div class="text-2xl mr-1 font-extralight">in</div>
-          <div class="w-24 mx-1 p-2 bg-black rounded-lg">
+          <div class="w-32 mx-1 p-2 bg-black rounded-lg">
             <div class="font-mono leading-none" x-text="days">{{ days }}</div>
             <div class="font-mono uppercase text-sm leading-none">Tagen</div>
           </div>
-          <div class="w-24 mx-1 p-2 bg-red-500 rounded-lg">
+          <div class="w-32 mx-1 p-2 bg-red-500 rounded-lg">
             <div class="font-mono leading-none" x-text="hours">{{ hours }}</div>
             <div class="font-mono uppercase text-sm leading-none">Stunden</div>
           </div>
-          <div class="w-24 mx-1 p-2 bg-yellow-500 rounded-lg">
+          <div class="w-32 mx-1 p-2 bg-yellow-500 rounded-lg">
             <div class="font-mono leading-none" x-text="minutes">{{ minutes }}</div>
             <div class="font-mono uppercase text-sm leading-none">Minuten</div>
           </div>
           <div class="text-2xl mx-1 font-extralight">und</div>
-          <div class="w-24 mx-1 p-2 bg-gray-400 rounded-lg">
+          <div class="w-32 mx-1 p-2 bg-gray-400 rounded-lg">
             <div class="font-mono leading-none" x-text="seconds">{{ seconds }}</div>
             <div class="font-mono uppercase text-sm leading-none">Sekunden</div>
           </div>
