@@ -80,10 +80,20 @@
   </div>
 </template>
 
-
 <script lang="ts" setup>
-const title = "Tag der dt. Einheit"
-var deadline = new Date("Oct 3, 2024 00:00:00").getTime();
+const title = "Tag der dt. Einheit";
+
+// Get the current date and year
+const now = new Date();
+const currentYear = now.getFullYear();
+
+// Determine the next occurrence of October 3rd
+let nextReunificationDay = new Date(`Oct 3, ${currentYear} 00:00:00`).getTime();
+if (now.getTime() > nextReunificationDay) {
+  nextReunificationDay = new Date(`Oct 3, ${currentYear + 1} 00:00:00`).getTime();
+}
+
+var deadline = nextReunificationDay;
 var days = ref(0)
 var hours_until = ref(0)
 var hours = ref(0)
@@ -94,10 +104,8 @@ var x = setInterval(function() {
   var t = deadline - now;
   days.value = Math.floor(t / (1000 * 60 * 60 * 24));
   hours_until.value = Math.floor(t / (1000 * 60 * 60));
-  hours.value = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+  hours.value = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   minutes.value = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
   seconds.value = Math.floor((t % (1000 * 60)) / 1000);
-
 }, 1000);
-
 </script>
