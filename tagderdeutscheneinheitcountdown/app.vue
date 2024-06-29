@@ -83,7 +83,7 @@
 
 <script lang="ts" setup>
 const title = "Tag der dt. Einheit"
-var deadline = new Date("Oct 3, 2023 00:00:00").getTime();
+var deadline = new Date("Oct 3, 2024 00:00:00").getTime();
 var days = ref(0)
 var hours_until = ref(0)
 var hours = ref(0)
