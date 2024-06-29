@@ -1,9 +1,8 @@
 name: Deploy to GitHub Pages
-on:
-  workflow_dispatch:
+'on':
   push:
     branches:
-      - main
+      - master
 defaults:
   run:
     working-directory: tagderdeutscheneinheitcountdown/
